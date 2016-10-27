@@ -55,7 +55,6 @@ def menu():
             print(outputfolderfiles)
         elif ans == "3":
             print("base config contents")
-            #baseconfig = open('_base cisco l3 switch config.txt','r')
             print(baseconfig.read())
         elif ans == "4":
             ans = False
@@ -70,6 +69,7 @@ def searches():
     print("Input files found : "+str(inputfolderfiles))
     for inputfilename in inputfolderfiles:
         with open(".\Inputfiles\\"+inputfilename) as input_file:
+
             # hostname to filename builder for output file
             result = re.search('(cli prompt ")(.+)' , input_file.read())
             result = result.group(2)
@@ -132,7 +132,7 @@ def searches():
             print("router ospf  "+resultarea+"\n router-id "+result+"\n passive-interface default", file = outputfiledestination)
             print("ospf info converted")
 
-            # Switch Stack conversion
+            # Switch Stack conversion - possible additional feature to convert a set of individual switches to a stack
             # switchnumber = input("what is the new switch number of __") (for stacking if we need to stack individuals)
 
 
