@@ -13,8 +13,8 @@ To use it:
     for the file yet and react if it doesn't exist, because I don't care). If you don't want to comment out a bunch of stuff,
     just make a blank file.
     
-    load the Inputfiles folder with the scripts to convert - this is built for Avaya Passport configs, I would like to test it
-    out with other types in the future.
+    load the Inputfiles folder with the scripts to convert - this is built for Avaya Passport configs, 
+    I would like to test it out with other types in the future.
 
 Notes:
     the OSPF routes are commented out, to allow for putting them in the interface configs (the new cisco way) or as 
